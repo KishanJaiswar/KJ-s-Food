@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .form {
+            border: 1px solid #09b651;
+            width: 230px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 5px 10px 15px;
+            border-radius: 5px;
+            opacity: 0;
+        }
+
+        .form.none {
+            opacity: 1;
+        }
+
+        .form .close {
+            font-size: 1.3rem;
+            float: right;
+            font-weight: 600;
+            color: #09b651;
+            cursor: pointer;
+        }
+
+        .form h1 {
+            color: #09b651;
+            text-align: center;
+            font-size: 1.4rem;
+            padding: 20px 0 10px;
+        }
+
+        .form form {}
+
+        .form form input {
+            height: 30px;
+            width: 100%;
+            border-radius: 3px;
+            border: 1px solid #09b651;
+            text-indent: 5px;
+            letter-spacing: 1px;
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+
+        .form form input::placeholder {
+            color: #09b651;
+        }
+
+        .form form input:focus {
+            outline: none;
+        }
+
+        .form button {
+            width: 100%;
+            height: 30px;
+            background-color: #09b651;
+            font-size: 18px;
+            padding: 4px;
+            border-radius: 5px;
+            border: none;
+            color: white;
+            letter-spacing: .5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form" id="form">
+        <div class="close" id="closeBtn">&times;</div>
+        <h1>Register</h1>
+        <form action="">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" name="password" id="" placeholder="Password" required>
+            <input type="password" name="confirmPassword" id="" placeholder="Confirm Password" required>
+            <button type="submit" class="submit-btn">Register</button>
+        </form>
+    </div>
+    <script>
+        var form = document.getElementById("form");
+        var cross = document.getElementById("closeBtn");
+
+        window.addEventListener("load", function () {
+            setTimeout(() => {
+                form.classList.add("none");
+            }, 2000);
+        })
+        
+        cross.addEventListener("click", function () {
+            form.classList.remove("none");
+        })
+    </script>
+</body>
+
+</html>

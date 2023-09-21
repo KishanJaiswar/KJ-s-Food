@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css files/menu.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="nav1">
+            <a href="#" class="logo"><i class="fas fa-utensils"></i>KJ's Food</a>
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="#">Menu</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <div class="icons">
+                <!--<div id="menu-btn" class="fas fa-bars"></div>-->
+                <div id="cart-btn" class="fas fa-shopping-cart"></div>
+            </div>
+        </div>
+    </div>
+    <div class="menu-page" id="menu">
+        <div class="menu-content">
+            <h1 class="header-1">Menu</h1>
+            <div class="title">
+                <p class="para">A taste you'll remember.</p>
+                <form action="">
+                    <input type="search" id="searchItem" placeholder="search" onkeyup="search()">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </form>
+            </div>
+            <hr class="hr1">
+            <div class="Card">
+                <div class="category">
+                    <ul class="carousel">
+                        <li class="card">
+                            <div class="img"><img src="images/burger.jpg" alt="img" draggable="false"></div>
+                            <h2>Burger</h2>
+                            <button type="button" class="btn">order now</button>
+                        </li>
+                        <li class="card">
+                            <div class="img"><img src="images/burgerAndFries.png" alt="img" draggable="false"></div>
+                            <h2>Burger & Fries</h2>
+                            <button type="button" class="btn">order now</button>
+                        </li>
+                        <li class="card">
+                            <div class="img"><img src="images/chickenlollipop2.webp" alt="img" draggable="false"></div>
+                            <h2>Chicken Lollipop</h2>
+                            <button type="button" class="btn">order now</button>
+                        </li>
+                        <li class="card">
+                            <div class="img"><img src="images/pizza.jpg" alt="img" draggable="false"></div>
+                            <h2>Pizza</h2>
+                            <button type="button" class="btn">order now</button>
+                        </li>
+                        <li class="card">
+                            <div class="img"><img src="images/red meat.jpg" alt="img" draggable="false"></div>
+                            <h2>Meat</h2>
+                            <button type="button" class="btn">order now</button>
+                        </li>
+                        <li class="card">
+                            <div class="img"><img src="images/vegan.jpg" alt="img" draggable="false"></div>
+                            <h2>Salad</h2>
+                            <button type="button" class="btn">order now</button>
+                        </li>images/
+                    </ul>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="main" id="products">
+                    <div class="single-menu">
+                        <img src="images/burger.jpg" alt="Burger">
+                        <div class="details">
+                            <h1>Burger</h1>
+                            <div class="orderAndPrize">
+                                <a href="">Order Now</a>
+                                <p>&#8377;70</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <img src="images/burgerAndFries.png" alt="Burger And Fries">
+                        <div class="details">
+                            <h1>Burger & Fries</h1>
+                            <div class="orderAndPrize">
+                                <a href="">Order Now</a>
+                                <p>&#8377;70</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <img src="images/Chicken Biryani.jpg" alt="Chicken Biryani">
+                        <div class="details">
+                            <h1>Chicken Biryani</h1>
+                            <div class="orderAndPrize">images/
+                                <a href="">Order Now</a>
+                                <p>&#8377;70</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <img src="images/Chicken curry.jpg" alt="Chicken Curry">
+                        <div class="details">
+                            <h1>Chicken Curry</h1>
+                            <div class="orderAndPrize">
+                                <a href="">Order Now</a>
+                                <p>&#8377;70</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <img src="images/Dosa.png" alt="Dosa">
+                        <div class="details">
+                            <h1>Dosa</h1>
+                            <div class="orderAndPrize">
+                                <a href="">Order Now</a>
+                                <p>&#8377;70</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <img src="images/double cheese burger2.jpg" alt="Double cheese burger">
+                        <div class="details">
+                            <h1>Double Cheese Burger</h1>
+                            <div class="orderAndPrize">
+                                <a href="">Order Now</a>
+                                <p>&#8377;70</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <img src="images/Idli.jpg" alt="idli">
+                        <div class="details">
+                            <h1>Idli</h1>
+                            <div class="orderAndPrize">
+                                <a href="">Order Now</a>
+                                <p>&#8377;70</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <img src="images/lollypop.jpg" alt="Lollipop">
+                        <div class="details">
+                            <h1>Lollipop</h1>
+                            <div class="orderAndPrize">
+                                <a href="">Order Now</a>
+                                <p>&#8377;70</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <img src="images/meat.jpg" alt="Meat">
+                        <div class="details">
+                            <h1>Meat</h1>
+                            <div class="orderAndPrize">
+                                <a href="">Order Now</a>
+                                <p>&#8377;70</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <img src="images/momo.jpg" alt="">
+                        <div class="details">
+                            <h1>Momo</h1>
+                            <div class="orderAndPrize">
+                                <a href="">Order Now</a>
+                                <p>&#8377;70</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <img src="images/nan.jpg" alt="">
+                        <div class="details">
+                            <h1>Nan</h1>
+                            <div class="orderAndPrize">
+                                <a href="">Order Now</a>
+                                <p>&#8377;70</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <img src="images/Noodles.jpg" alt="">
+                        <div class="details">
+                            <h1>Noodles</h1>
+                            <div class="orderAndPrize">
+                                <a href="">Order Now</a>
+                                <p>&#8377;70</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <img src="images/pizza.jpg" alt="">
+                        <div class="details">
+                            <h1>Pizza</h1>
+                            <div class="orderAndPrize">
+                                <a href="">Order Now</a>
+                                <p>&#8377;70</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <img src="images/Rajasthani food.jpg" alt="">
+                        <div class="details">
+                            <h1>Rajasthani Thali</h1>
+                            <div class="orderAndPrize">
+                                <a href="">Order Now</a>
+                                <p>&#8377;70</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <img src="images/red meat.jpg" alt="">
+                        <div class="details">
+                            <h1>Teak</h1>
+                            <div class="orderAndPrize">
+                                <a href="">Order Now</a>
+                                <p>&#8377;70</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <img src="images/sandwich.jpg" alt="">
+                        <div class="details">
+                            <h1>Sandwhich</h1>
+                            <div class="orderAndPrize">
+                                <a href="">Order Now</a>
+                                <p>&#8377;70</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <img src="images/veg pullav.jpg" alt="">
+                        <div class="details">
+                            <h1>Veg Pullav</h1>
+                            <div class="orderAndPrize">
+                                <a href="">Order Now</a>
+                                <p>&#8377;70</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <img src="images/veg soup.jpg" alt="">
+                        <div class="details">
+                            <h1>Veg Soup</h1>
+                            <div class="orderAndPrize">
+                                <a href="">Order Now</a>
+                                <p>&#8377;70</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <img src="images/vegan.jpg" alt="">
+                        <div class="details">
+                            <h1>Salad</h1>
+                            <div class="orderAndPrize">
+                                <a href="">Order Now</a>
+                                <p>&#8377;70</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <img src="images/double cheese burger2.jpg" alt="Double cheese burger">
+                        <div class="details">
+                            <h1>Double Cheese Burger</h1>
+                            <div class="orderAndPrize">
+                                <a href="">Order Now</a>
+                                <p>&#8377;70</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <img src="images/Idli.jpg" alt="idli">
+                        <div class="details">
+                            <h1>Idli</h1>
+                            <div class="orderAndPrize">
+                                <a href="">Order Now</a>
+                                <p>&#8377;70</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <img src="images/lollypop.jpg" alt="Lollipop">
+                        <div class="details">
+                            <h1>Lollipop</h1>
+                            <div class="orderAndPrize">
+                                <a href="">Order Now</a>
+                                <p>&#8377;70</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <img src="images/meat.jpg" alt="Meat">
+                        <div class="details">
+                            <h1>Meat</h1>
+                            <div class="orderAndPrize">
+                                <a href="">Order Now</a>
+                                <p>&#8377;70</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <img src="images/momo.jpg" alt="">
+                        <div class="details">
+                            <h1>Momo</h1>
+                            <div class="orderAndPrize">
+                                <a href="">Order Now</a>
+                                <p>&#8377;70</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer section-->
+    <footer>
+        <div class="footer">
+            <div class="row">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+
+            <div class="row">
+                <ul>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Career</a></li>
+                </ul>
+            </div>
+
+            <div class="row">
+                <p>Copyright © 2021 - All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./js files/searchItem.js"></script>
+    <script src="./js files/category.js"></script>
+</body>
+
+</html>

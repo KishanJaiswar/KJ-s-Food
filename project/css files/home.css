@@ -1,0 +1,653 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transform: .2s liner;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.header .nav1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.3rem 5%;
+    background-color: #09b651;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.header .nav1 .logo {
+    font-family: Century751 SeBd BT;
+    font-size: 30px;
+    color: white;
+}
+
+.header .nav1 .logo i {
+    font-size: 30px;
+    font: lighter;
+    padding-top: 3px;
+    margin-right: .3rem;
+    animation: change 20s linear infinite;
+}
+
+@keyframes change {
+    0% {
+        color: rgb(247, 16, 54);
+    }
+
+    10% {
+        color: rgb(247, 151, 7);
+    }
+
+    20% {
+        color: rgb(248, 244, 10);
+    }
+
+    30% {
+        color: gold;
+    }
+
+    40% {
+        color: greenyellow;
+    }
+
+    50% {
+        color: mediumseagreen;
+    }
+
+    60% {
+        color: green;
+    }
+
+    70% {
+        color: rgb(4, 88, 4);
+    }
+
+    80% {
+        color: rgb(3, 43, 70);
+    }
+
+    90% {
+        color: rgb(1, 3, 7);
+    }
+
+    100% {
+        color: rgb(255, 255, 255);
+    }
+}
+
+.links {}
+
+.links a {
+    color: white;
+    font-size: 1rem;
+    margin-left: 1rem;
+    padding: 5px 7px;
+}
+
+.links a:hover {
+    background-color: rgb(0, 61, 0);
+    border-radius: 5px;
+}
+
+.header .nav1 .icons div {
+    display: inline-block;
+    height: 2.8rem;
+    width: 2.8rem;
+    line-height: 2.8rem;
+    font-size: 1.3rem;
+    text-align: center;
+    color: #09b651;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: .3rem;
+    background-color: white;
+}
+
+.home {
+    margin: 7rem 4rem 0rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 500px;
+    overflow: hidden;
+}
+
+.home .content {
+    width: 34%;
+}
+
+.home .content span {
+    font-size: 1.5rem;
+    color: #10be59;
+}
+
+.home .content h3 {
+    font-size: 2.5rem;
+    color: #130f40;
+    padding-top: 1rem;
+}
+
+.home .content p {
+    font-size: 15px;
+    color: #666;
+    line-height: 2;
+    padding: 1rem 0;
+}
+
+.home .content a {
+    color: white;
+    font-size: 2.7rem;
+    background-color: #27ae60;
+    padding: 5px;
+    border: 1px solid #27ae60;
+    border-radius: 5px;
+}
+
+.home .content a:hover {
+    background-color: white;
+    color: #09b651;
+}
+
+.home .wrapper {
+    width: 62%;
+    height: 90%;
+    overflow: hidden;
+    position: relative;
+    background-color: white;
+}
+
+.home .wrapper>div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation: animate 28s infinite;
+    opacity: 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+.home .wrapper>div:nth-child(2) {
+    animation-delay: 7s;
+}
+
+.home .wrapper>div:nth-child(3) {
+    animation-delay: 14s;
+}
+
+.home .wrapper>div:nth-child(4) {
+    animation-delay: 21s;
+}
+
+.home .wrapper>div:nth-child(5) {
+    animation-delay: 28s;
+}
+
+@keyframes animate {
+    10% {
+        opacity: 1;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    40% {
+        transform: scale(1.05);
+    }
+}
+
+.category {
+    margin: .5rem 4rem 0rem 4rem;
+}
+
+.category .carousel {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 5) - 12px);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16.2px;
+    border-radius: 8px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.category .carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.category .carousel.no-transition {
+    scroll-behavior: auto;
+}
+
+.category .carousel.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+}
+
+.category .carousel.dragging .card {
+    cursor: grab;
+    user-select: none;
+}
+
+.category .carousel :where(.card, .img) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.category .carousel .card {
+    scroll-snap-align: start;
+    height: 240px;
+    width: 210px;
+    list-style: none;
+    cursor: pointer;
+    padding-bottom: 0px;
+    flex-direction: column;
+    border-radius: 8px;
+    border: 1px solid #09b651;
+}
+
+.category .carousel .card .img {
+    border: 7px solid #09b651;
+    height: 148px;
+    width: 148px;
+    border-radius: 50%;
+}
+
+.category .card .img img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+}
+
+.category .carousel .card h2 {
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 10px 0 5px 0px;
+}
+
+.category .carousel .card .btn {
+    color: white;
+    background-color: #09b651;
+    font-size: 1.2rem;
+    margin-top: .5rem;
+    padding: 3px 6px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+    .wrapper .carousel {
+        grid-auto-columns: calc((100% / 2) - 9px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper .carousel {
+        grid-auto-columns: 100%;
+    }
+}
+
+/*popular*/
+.popular {
+    margin: 2.5rem 0rem 0rem;
+}
+
+.pop-heading {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.pop-heading span {
+    font-size: 3rem;
+    font-family: Freestyle Script;
+    color: #09b651;
+    font-weight: 100;
+    padding: 5px 0px 0px;
+}
+
+.pop-heading h3 {
+    font-size: 3rem;
+    color: #130f40;
+}
+
+.popular .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3rem;
+    padding-bottom: 3rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.popular .box-container .box {
+    width: 15.48rem;
+    border: 1px solid #09b651;
+    text-align: center;
+    justify-content: space-between;
+    border-radius: .5rem;
+    background-color: #fff;
+    box-shadow: 0 2px 2px #09b651;
+    height: 295px;
+}
+
+.popular .box-container .box .fa-heart {
+    font-size: 1.3rem;
+    color: #666;
+    cursor: pointer;
+    display: flex;
+    justify-content: right;
+    padding: 5px;
+}
+
+.popular .box-container .box .fa-heart:hover {
+    color: #09b651;
+}
+
+.popular .box-container .box .image {}
+
+.popular .box-container .box .image img {
+    height: 10.5rem;
+}
+
+.popular .box-container .box .content {
+    padding: 10px;
+}
+
+.popular .box-container .box .content h3 {
+    font-size: 1rem;
+    color: #130f40;
+}
+
+.popular .box-container .box .content .stars {
+    font-size: 1rem;
+}
+
+.popular .box-container .box .content .stars i {
+    color: gold;
+}
+
+.popular .box-container .box .content .stars span {
+    color: #666;
+    font-size: .7rem;
+}
+
+.popular .box-container .box .content .price {
+    font-size: 1rem;
+    color: #130f40;
+    padding-bottom: 8px;
+}
+
+.popular .box-container .box .content .price span {
+    font-size: 1.5rem;
+    color: #666;
+    text-decoration: line-through;
+}
+
+.popular .box-container .box .content a {
+    border: 1px #130f40;
+    border-radius: 5px;
+    background: #27ae60;
+    color: white;
+    margin-top: 0.4rem;
+    padding: 7px 30px;
+    font-size: 15px;
+}
+
+.popular .box-container .box .content a:hover {
+    background-color: #130f40;
+    color: white;
+}
+
+.banner {
+    margin: 0rem 4rem;
+}
+
+.banner .row-banner {
+    background: url(../images/double\ cheese\ burger2.jpg);
+    z-index: -1;
+    background-repeat: no-repeat;
+    height: 25rem;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.banner .row-banner .content {
+    position: absolute;
+    top: 40%;
+    left: 3%;
+    transform: translateY(-50%);
+}
+
+.banner .row-banner .content span {
+    font-size: 4rem;
+    color: #fff;
+}
+
+.banner .row-banner .content h3 {
+    font-size: 5rem;
+    color: red;
+    text-transform: uppercase;
+}
+
+.banner .row-banner .content p {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    color: #fff;
+}
+
+.banner .row-banner .content a {
+    border-radius: 5px;
+    background: #27ae60;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+.banner .row-banner .content a:hover {
+    background-color: #130f40;
+    color: white;
+}
+
+.banner .grid-banner {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.banner .grid-banner .grid {
+    text-align: center;
+}
+
+.banner .grid-banner .grid .content {
+    padding: 1.5rem 0rem .5rem;
+    text-align: center;
+}
+
+.banner .grid-banner .grid .content span {
+    font-size: 2rem;
+    color: red;
+}
+
+.banner .grid-banner .grid .content h3 {
+    font-size: 2rem;
+    color: #130f40;
+    padding: 2px 0px;
+}
+
+.banner .grid-banner .grid img {
+    height: 250px;
+    width: 367px;
+    pointer-events: none;
+}
+
+.banner .grid-banner .grid a {
+    border-radius: 5px;
+    background: #27ae60;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+.footer {
+    margin: 2rem 0rem 0rem;
+    background-color: #09b651;
+    padding: 10px 0px;
+    font-family: 'Play', sans-serif;
+    text-align: center;
+}
+
+.footer .row {
+    width: 100%;
+    padding: 10px;
+    font-size: 0.8em;
+}
+
+.footer .row a {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+
+.footer .row ul {
+    width: 100%;
+}
+
+.footer .row ul li {
+    display: inline-block;
+    margin: 10px 15px;
+    font-size: 17px;
+}
+
+.footer .row a i {
+    font-size: 2rem;
+    margin: 0% 1%;
+}
+
+.footer .row p {
+    color: white;
+    font-size: 12px;
+}
+
+.popLoginForm {
+    margin: 2rem 4rem;
+}
+
+.popLoginForm .box {
+    background-color: #e6f1eb;
+    width: 280px;
+    height: 240px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: transparent;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.popLoginForm.anyname {
+    animation: 3s ease;
+    opacity: 1;
+}
+
+.popLoginForm.anyname .box {
+    margin-left: 0;
+    opacity: 1;
+}
+
+.popLoginForm .box .form {
+    border-radius: 10px;
+    border: 1px solid green;
+    background-color: #d8fce7;
+    padding: 0px 5px;
+    height: 100%;
+    width: 100%;
+}
+
+.popLoginForm .box .form h1 {
+    font-size: 1.8rem;
+    color: #09b651;
+    text-align: center;
+    margin: 30px 0px 20px;
+}
+
+.popLoginForm .box .form .close {
+    float: right;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #09b651;
+}
+
+.popLoginForm .box .form .close:hover {
+    color: green;
+}
+
+.popLoginForm .box .form .input-field {
+    margin: 0px 0px 15px;
+    height: 30px;
+    width: 100%;
+    border-radius: 3px;
+    text-indent: 5px;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+.popLoginForm .box .form .input-field:focus {
+    outline: 1px solid #09b651;
+}
+
+.popLoginForm .box .form .input-field::placeholder {
+    color: #09b651;
+}
+
+.popLoginForm .box .form .check-box {
+    accent-color: #09b651;
+    height: 12px;
+}
+
+.popLoginForm .box .form .remember {
+    font-size: 14px;
+    padding-left: 3px;
+    color: #09b651;
+}
+
+.popLoginForm .box .form span a {
+    font-size: 14px;
+    float: right;
+    color: #09b651;
+    text-transform: lowercase;
+}
+
+.popLoginForm .box .form .submit-btn {
+    width: 100%;
+    background-color: #09b651;
+    font-size: 18px;
+    padding: 4px;
+    margin: 10px 0;
+    border-radius: 5px;
+    color: white;
+    letter-spacing: .5px;
+    cursor: pointer;
+}

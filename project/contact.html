@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css files/contact.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="nav1">
+            <a href="#" class="logo"><i class="fas fa-utensils"></i>KJ's Food</a>
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="about.html">About Us</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="icons">
+                <!--<div id="menu-btn" class="fas fa-bars"></div>-->
+                <div id="cart-btn" class="fas fa-shopping-cart"></div>
+            </div>
+        </div>
+    </div>
+    <h1 class="head">We are here to help you</h1>
+    <div class="form">
+        <h1>Get in touch with us</h1>
+        <form action="https://sheetdb.io/api/v1/0x0pi1hsj2gsr" method="post" id="sheetdb-form">
+            <div class="fname">
+                <input type="text" name="data[FullName]" id="FullName" placeholder="Name">
+            </div>
+            <div class="mail">
+                <input type="email" name="data[Email]" id="mail" placeholder="Email">
+            </div>
+            <div class="subject">
+                <input type="text" name="data[Subject]" id="topic" placeholder="Subject">
+            </div>
+            <div class="comment">
+                <textarea name="data[Message]" id="comment" placeholder="Message"></textarea>
+            </div>
+            <button type="submit" class="subBtn">Submit</button>
+        </form>
+    </div>
+    <div class="boxes">
+        <div class="address">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            <p>984, Mills Mountains, Mumbai, West Virginia, 78</p>
+        </div>
+        <div class="phone">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <p>9967580692</p>
+        </div>
+        <div class="Email">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <a href="mailto:jaiswarkishan78@gmail.com">jaiswarkishan78@gmail.com</a>
+        </div>
+    </div>
+    <div class="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7537.730682157532!2d72.92005367101386!3d19.15737085446337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b869a67f8715%3A0xf030a062c07c30d5!2sTembhipada%2C%20Bhandup%20West%2C%20Mumbai%2C%20Maharashtra%20400078!5e0!3m2!1sen!2sin!4v1684077084475!5m2!1sen!2sin"
+            allowfullscreen="" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+    <!--footer section-->
+    <footer>
+        <div class="footer">
+            <div class="row">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+            <div class="row">
+                <ul>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Career</a></li>
+                </ul>
+            </div>
+            <div class="row">
+                <p>Copyright © 2021 - All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./js files/sandDataToGoogleSheet.js"></script>
+    <script src="./js files/form.js"></script>
+</body>
+
+</html>
